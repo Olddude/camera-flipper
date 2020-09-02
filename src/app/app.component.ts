@@ -28,7 +28,8 @@ export class AppComponent implements OnInit {
   start(): void {
   }
 
-  flip(): void {
+  async switchCamera(): Promise<void> {
+    await this.ngxCam.switchCamera.toPromise();
   }
 
   screenshot(): void {

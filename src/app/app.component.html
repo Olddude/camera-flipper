@@ -1,11 +1,11 @@
 <div class="p-d-flex">
   <div class="p-d-flex p-flex-column">
     <div class="p-mr-2">
-      <ngx-camera #ngxCam [startCam]="false"></ngx-camera>
+      <ngx-camera #ngxCam></ngx-camera>
     </div>
     <div class="p-mr-2">
       <button pButton label="Start" (click)="start()"></button>
-      <button pButton label="Flip" (click)="flip()"></button>
+      <button pButton label="Flip" (click)="switchCamera()"></button>
       <button pButton label="Stop" (click)="stop()"></button>
     </div>
     <div class="p-mr-2">
